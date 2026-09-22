@@ -1,5 +1,7 @@
 # Reefer im Block: Wer darf auf die Steckdosen? – Streamlit-Demo
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-reefer-demo.streamlit.app/)**
+
 Interaktive Fall-Demo zu **Kühlcontainern (Reefern) im Containerblock**: Reefer brauchen Strom und dürfen nur auf Stapel mit Steckdosen. Stellt der Kran dort Normalcontainer ab, fehlt der Platz, wenn
 der nächste Reefer kommt: er steht **ohne Strom**. Die Demo beantwortet: **Wie viel Puffer an freien Steckdosen-Plätzen schützt den Strom, ohne den Block zu verstopfen, und ab wann hilft keine Regel
 mehr, weil die Steckdosen fehlen?**
