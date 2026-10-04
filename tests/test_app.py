@@ -12,9 +12,11 @@ import rfr_evaluation as E
 from rfr_presets import SETTING_SPECS
 
 APP = str(pathlib.Path(__file__).resolve().parent.parent / "app.py")
-FOOTER = ("Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-          "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-          "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)")
+FOOTER = (
+    "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zum Thema: [Hafenlogistik optimieren](https://sebastianhanisch.net/hafenlogistik-optimierung.html)."
+)
 EG, PU, RS = C.RULE_EGAL, C.RULE_PUFFER, C.RULE_RESERVIERT
 
 # Am Preset-Block (Seed 490): Reefer ohne Strom bei Puffer (Wert, Delta gegen egal), Art der Meldung
