@@ -6,7 +6,7 @@ Interaktive Fall-Demo zu **Kühlcontainern (Reefern) im Containerblock**: Reefer
 der nächste Reefer kommt: er steht **ohne Strom**. Die Demo beantwortet: **Wie viel Puffer an freien Steckdosen-Plätzen schützt den Strom, ohne den Block zu verstopfen, und ab wann hilft keine Regel
 mehr, weil die Steckdosen fehlen?**
 
-Teil des Portfolios für die Website „Sebastian Hanisch – Operations Research und Machine Learning", Zusatz zur Hafen-Linie (Containerblock; setzt auf der Stapelplanung `stapelplanung-demo` auf: gleicher
+Teil des Portfolios für die Website „Sebastian Hanisch – Operations Research und Machine Learning“, Zusatz zur Hafen-Linie (Containerblock; setzt auf der Stapelplanung `stapelplanung-demo` auf: gleicher
 Block, gleiche Ereignisfolge, gleiche Umstapel-Regel Bestfit).
 
 ## Warum dieses Problem
