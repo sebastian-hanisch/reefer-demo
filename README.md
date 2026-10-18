@@ -80,7 +80,7 @@ begrenzen sie vor dem Erzeugen der Regler (`clamp_settings`), und ohne Steckdose
 
 ## Tests
 
-`python -m pytest tests/ -v` – 204 Tests, rund 3,5 Minuten. Zusammensetzung:
+`python -m pytest tests/ -v` – 208 Tests, rund 3,5 Minuten. Zusammensetzung:
 
 - **Szenario:** Ereignisfolge und Schätzung bitgleich zur Stapelplanung, Reefer-Zuordnung (Extremwerte, Determinismus, ein größerer Anteil enthält den kleineren), Faustregel, Fehlerfälle.
 - **Regeln und Ablauf:** Bestfit-Fälle einzeln, Puffer-Semantik, Kandidatenreihenfolge; die Zähler gegen eine **unabhängige, bewusst einfache Nachrechnung** auf 60 Zufallsszenarien, Familien-Gleichheit, Invarianten je
