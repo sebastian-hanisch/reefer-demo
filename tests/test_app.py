@@ -75,7 +75,7 @@ def test_skeleton_and_footer():
     assert len(at.title) == 1 and "Reefer" in at.title[0].value
     assert any(v.value.startswith("## 🎯") for v in at.markdown)
     assert [s.value for s in at.subheader] == ["📐 Wie viel Puffer ist richtig?"]
-    assert [e.label for e in at.expander] == ["🔧 Wie wir das erreichen – Regeln im Vergleich", "Wie funktioniert diese Demo?", "📐 Mathematische Formulierung"]
+    assert [e.label for e in at.expander] == ["💬 In einfachen Worten", "🔧 Wie wir das erreichen – Regeln im Vergleich", "Wie funktioniert diese Demo?", "📐 Mathematische Formulierung"]
     assert any(c.value == FOOTER for c in at.caption)
     presets = [b.label for b in at.button if b.label in C.PRESETS]
     assert presets == list(C.PRESETS) and len(presets) == 5 and all(len(n) <= 16 for n in presets)
@@ -341,11 +341,11 @@ def test_pdf_download_button_is_offered():
 
 def test_texts_state_the_rules_the_assumptions_and_the_limits():
     at = fresh()
-    text = "\n".join(m.value for m in at.expander[1].markdown)
+    text = "\n".join(m.value for m in at.expander[2].markdown)
     for needle in ("Steckdosen egal", "Steckdosen-Puffer", "Steckdosen reserviert", "Faustregel", "durch Normalcontainer blockiert", "Kapazität erschöpft", "Reefer-Racks",
                    "Größenordnungen aus einer Simulation", "bleibt dort bis zur Abholung"):
         assert needle in text, needle
-    math = "\n".join(m.value for m in at.expander[2].markdown)
+    math = "\n".join(m.value for m in at.expander[3].markdown)
     for needle in ("Steckdosen-Plätze $K = sH$", "Bestfit", "$B \\ge K$ ist **reserviert**", "\\operatorname{round}(q \\cdot N_{\\max})", "2\\,\\mathrm{SE}"):
         assert needle in math, needle
     assert "Anschlussleistung" in text and "Temperaturklassen" in text

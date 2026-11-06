@@ -57,6 +57,17 @@ fehlen. Wie das Modell funktioniert, steht im Expander "Wie funktioniert diese D
 """
 )
 
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/kuehlcontainer-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Ein Teil der Container im Hafen sind Kühlcontainer. Sie brauchen Strom und dürfen deshalb nur auf Stapel mit Steckdosen. Stellt der Kran dort gewöhnliche Container ab, fehlt der Platz, wenn der nächste Kühlcontainer kommt, und er steht ohne Strom. Die Demo vergleicht drei Regeln für die gewöhnlichen Container: Steckdosen egal, Steckdosen reserviert und ein Puffer dazwischen, der eine feste Zahl von Plätzen mit Steckdose freihält. Sie sehen einen einzelnen Ablauf und daneben viele zufällige Abläufe. Gezählt werden die Kühlcontainer ohne Strom und die Umstapelungen, die der Kran dafür in Kauf nimmt. Die Demo zeigt auch, wann keine Regel mehr hilft, weil die Steckdosen fehlen. Alle Größen sind erfunden.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/kuehlcontainer-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
+
 st.caption("🎯 Schnellstart – ein Beispielszenario laden:")
 PRESET_HELP = {
     "Passend": "Die Steckdosen reichen, aber Normalcontainer belegen sie: der Puffer löst das fast kostenlos, das strenge Reservieren kostet deutlich mehr.",
@@ -317,6 +328,24 @@ der gepaarten Differenz beträgt. Die Verteilung zeigt, in wie vielen Blöcken e
     )
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/kuehlcontainer-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind ein Block aus Stapeln mit Steckdosen an den ersten Stapeln, eine zufällige Folge von Ankünften und Abholungen, ein Anteil Kühlcontainer und ein geschätzter Abholzeitpunkt je Container. Gesucht ist, auf welche Stapel die gewöhnlichen Container dürfen, sodass möglichst wenige Kühlcontainer ohne Strom stehen und möglichst wenig umgestapelt wird.
+
+| Symbol | Bedeutung |
+|---|---|
+| $B$ | Puffer: Zahl der Plätze mit Steckdose, die nach dem Einlagern eines gewöhnlichen Containers auf einem Steckdosen-Stapel mindestens frei bleiben (0 heißt Steckdosen egal) |
+| $K$ | Zahl der Steckdosen-Plätze (Steckdosen-Stapel mal Höhe); ein Puffer von $K$ heißt Steckdosen reserviert |
+| $q$ | Anteil der Container, die Kühlcontainer sind |
+| $\sigma$ | Fehler der Abfahrtsschätzung als Bruchteil der mittleren Standzeit |
+| $U$ | Zahl der Kühlcontainer, die ohne Strom ankommen |
+| $M/m$ | Umstapelungen je abgeholtem Container ($m$ ist die Zahl der Container) |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/kuehlcontainer-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Block mit Steckdosen.** Stapel $i = 1, \dots, n$ der Höhe $H$; Steckdosen-Stapel $P = \{1, \dots, s\}$, Steckdosen-Plätze $K = sH$. Jeder Container $c$ ist mit Wahrscheinlichkeit $q$ ein
