@@ -1,4 +1,4 @@
-"""Abnahmekriterien der Presets (Plan, Abschnitt 7): Welche Geschichte erzählt jedes Beispielszenario, und woran erkennt man, dass sie trägt?
+"""Abnahmekriterien der Presets (Plan, Abschnitt 7): Welche Geschichte erzählt jedes Beispielszenario, und woran erkennt man, dass sie zutrifft?
 
 Einzige Quelle für `tools/tune_presets.py` (Abstimmung) und `tests/test_preset_stories.py` (Abnahme). Jedes Kriterium ist eine Aussage über ein Tupel von `BlockResult`s (rfr_evaluation):
 über viele Blöcke die Aussage im MITTEL (`criteria`), über den EINEN Block des Presets die Aussage an diesem Block in ganzen Zahlen (`holds`). So wird dieselbe Geschichte an der

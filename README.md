@@ -49,7 +49,7 @@ Die **Stichprobe** (50 Blöcke mit den Seeds 0 bis 49, nicht der eingestellte Se
 | **Wo liegt das Knie?** | Puffer-Kurve (3 Steckdosen-Stapel): der Strom ist ab B ≈ 5 gesichert (0,01), die Umstapelungen steigen erst danach spürbar (B = 8: 0,839, B = 10: 0,883, B = 15: 0,933). |
 | **Stimmt die Faustregel?** | An zwölf Einstellungen (Reefer-Anteil 10 bis 40 %, 3 bis 5 Steckdosen-Stapel) höchstens 0,07 blockierte Ankünfte je Block; der Aufschlag an Umstapelungen gegen „egal“ liegt zwischen −5 % und +6 %, in zehn von zwölf Fällen höchstens +2 %. Empirisch, nicht bewiesen. |
 | **Was tun bei zu wenigen Steckdosen?** | 30 % Reefer, 2 Stapel: selbst „reserviert“ lässt 1,83 Reefer ohne Strom (Kapazität erschöpft); egal 9,54. Den Rest löst nur ein weiterer Steckdosen-Stapel. |
-| **Presets** | Eine gemeinsame Block-Nummer (Seed 490) für alle fünf; jede Kennzahl zwischen dem 10. und 90. Perzentil der Grundgesamtheit. Von 500 Seeds tragen 56 alle fünf Geschichten. |
+| **Presets** | Eine gemeinsame Block-Nummer (Seed 490) für alle fünf; jede Kennzahl zwischen dem 10. und 90. Perzentil der Grundgesamtheit. Von 500 Seeds zeigen 56 alle fünf Geschichten. |
 
 ## Ehrliche Grenzen
 

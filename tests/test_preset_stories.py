@@ -1,4 +1,4 @@
-"""Abnahme der Presets an ECHTEN Daten: jede Geschichte trägt im Mittel über 200 Blöcke (Seeds 0-199) UND an dem einen Block, den das Preset zeigt; der gezeigte Block ist typisch, nicht der
+"""Abnahme der Presets an ECHTEN Daten: jede Geschichte gilt im Mittel über 200 Blöcke (Seeds 0-199) UND an dem einen Block, den das Preset zeigt; der gezeigte Block ist typisch, nicht der
 schönste Einzelfall. Alles ganzzahlig und deterministisch (kein Löser, keine Zeitgrenze)."""
 
 import pytest
